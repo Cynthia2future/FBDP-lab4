@@ -39,7 +39,7 @@ public class ActiveUserAnalysis {
             if (reportDate.compareTo(startDate) >= 0 && reportDate.compareTo(endDate) <= 0) {
                 boolean isActive = directPurchaseAmt > 0 || totalRedeemAmt > 0;
                 if (isActive) {
-                    return new Tuple2<>(userId, reportDate); // 返回用户ID和日期
+                    return new Tuple2<>(userId, reportDate); 
                 }
             }
             return null; // 不活跃用户不需要加入
