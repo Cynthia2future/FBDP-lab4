@@ -32,8 +32,8 @@ public class ActiveUserAnalysis {
             String[] fields = line.split(",");
             long userId = Long.parseLong(fields[0]); 
             String reportDate = fields[1];             
-            long directPurchaseAmt = Long.parseLong(fields[5]); // 直接购买量
-            long totalRedeemAmt = Long.parseLong(fields[8]);   // 总赎回量
+            long directPurchaseAmt = Long.parseLong(fields[5]); 
+            long totalRedeemAmt = Long.parseLong(fields[8]);   
 
             // 只处理2014年8月的记录
             if (reportDate.compareTo(startDate) >= 0 && reportDate.compareTo(endDate) <= 0) {
