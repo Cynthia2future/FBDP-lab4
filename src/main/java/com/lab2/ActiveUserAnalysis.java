@@ -35,7 +35,7 @@ public class ActiveUserAnalysis {
             long directPurchaseAmt = Long.parseLong(fields[5]); 
             long totalRedeemAmt = Long.parseLong(fields[8]);   
 
-            // 只处理2014年8月的记录
+            // 筛选只处理2014年8月的记录
             if (reportDate.compareTo(startDate) >= 0 && reportDate.compareTo(endDate) <= 0) {
                 boolean isActive = directPurchaseAmt > 0 || totalRedeemAmt > 0;
                 if (isActive) {
