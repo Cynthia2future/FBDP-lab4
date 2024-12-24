@@ -1,3 +1,4 @@
 merge.py
 src/test/java/com/lab2/AppTest.java
 target/demo-1.0-SNAPSHOT-jar-with-dependencies.jar 
+target/*
